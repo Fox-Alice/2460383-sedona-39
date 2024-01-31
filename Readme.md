@@ -2,7 +2,7 @@
 
 * Студент: [Эльвира Муравьёва](https://up.htmlacademy.ru/htmlcss/39/user/2460383).
 * Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
-
+* GitHub Pages: [Проект Sedona]( https://fox-alice.github.io/2460383-sedona-39/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
