@@ -18,7 +18,7 @@
             <a class="navigation-link" href="#" class="navigation-item">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link_active" href="#" class="navigation-item">Гостиницы</a>
+            <a class="navigation-link navigation-link_active" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -92,18 +92,20 @@
           <label class="visually-hidden" for="filter-expensive">Сортировка по убыванию цены</label>
           <option value="expensive" id="filter-expensive">Сначала дорогие</option>
         </select>
-        <a class="catalog-view-button_selected" href="#">
+        <a class="catalog-view-button-selected" href="#">
           <span class="visually-hidden">Показать карточки</span>
         </a>
-        <a class="catalog-view-button_selected" href="#">
+        <a class="catalog-view-button" href="#">
           <span class="visually-hidden">Показать одну</span>
         </a>
         <a class="catalog-view-button" href="#">
           <span class="visually-hidden">Показать список</span>
         </a>
         <div class="catalog-card">
-          <a class="catalog-card-link">
+          <a class="catalog-card-link" tabindex="-1">
           <img class="catalog-card-image" src="#" alt="Звездное небо в расщелине">
+        </a>
+        <a class="catalog-card-link">
           <h3 class="catalog-card-title">Amara Resort & Spa</h3>
           </a>
           <p class="catalog-card-price">Гостиница</p>
@@ -113,6 +115,71 @@
           <p class="catalog-card-rating-icon"><span class="visually-hidden">4 звезды</span></p>
           <p class="catalog-card-rating">Рейтинг: 8,5</p>
         </div>
+        <div class="catalog-card">
+          <a class="catalog-card-link" tabindex="-1">
+          <img class="catalog-card-image" src="#" alt="Радуга над горным хребтом">
+        </a>
+        <a class="catalog-card-link">
+          <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <p class="catalog-card-price">Гостиница</p>
+          <span class="catalog-card-price">От 5000 ₽</span>
+          <a class="catalog-card-more-button">Подробнее</a>
+          <button class="catalog-card-favorite-button">В избранное</button>
+          <p class="catalog-card-rating-icon"><span class="visually-hidden">4 звезды</span></p>
+          <p class="catalog-card-rating">Рейтинг: 9,2</p>
+        </div>
+        <div class="catalog-card">
+          <a class="catalog-card-link" tabindex="-1">
+          <img class="catalog-card-image" src="#" alt="Горная вершина в рассветном солнце">
+        </a>
+        <a class="catalog-card-link">
+          <h3 class="catalog-card-title">Desert Quail Inn</h3>
+          </a>
+          <p class="catalog-card-price">Гостиница</p>
+          <span class="catalog-card-price">От 2500 ₽</span>
+          <a class="catalog-card-more-button">Подробнее</a>
+          <button class="catalog-card-favorite-button">В избранное</button>
+          <p class="catalog-card-rating-icon"><span class="visually-hidden">3 звезды</span></p>
+          <p class="catalog-card-rating">Рейтинг: 6,9</p>
+        </div>
+        <div class="catalog-card">
+          <a class="catalog-card-link" tabindex="-1">
+          <img class="catalog-card-image" src="#" alt="Магическое звезное небо над освещенным горным массивом">
+        </a>
+
+        <a class="catalog-card-link">
+          <h3 class="catalog-card-title">GreenTree Inn</h3>
+          </a>
+          <p class="catalog-card-price">Гостиница</p>
+          <span class="catalog-card-price">От 1500 ₽</span>
+          <a class="catalog-card-more-button">Подробнее</a>
+          <button class="catalog-card-favorite-button">В избранное</button>
+          <p class="catalog-card-rating-icon"><span class="visually-hidden">2 звезды</span></p>
+          <p class="catalog-card-rating">Рейтинг: 5,0</p>
+        </div>
+      </section>
+      <section class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-current" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-ellipsis" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ul>
       </section>
       <section class="subscribe subscribe-catalog">
         <h2 class="welcome-content-title subscribe-catalog-content-title">Подпишитесь на рассылку</h2>
