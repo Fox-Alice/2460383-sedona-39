@@ -41,6 +41,8 @@
 }
 
 .navigation-link {
+  font-size: 20px;
+  line-height: 24px;
   text-decoration: none;
   color: inherit;
   font-weight: 700;
@@ -49,6 +51,8 @@
 .header-link {
   text-decoration: none;
   color: inherit;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -100,7 +104,6 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  /* border: solid 2px rgba(255, 255, 255, 0.3); */
 }
 
 .reasons-item:nth-child(n+3):nth-child(-n+4) {
@@ -291,6 +294,15 @@
 
 .pagination-item-current {
   background-color: #f2f2f2;
+}
+
+.pagination-item-ellipsis {
+  background: transparent;
+}
+
+.pagination-ellipsis {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .pagination-link {
