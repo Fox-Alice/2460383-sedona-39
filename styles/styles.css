@@ -1,9 +1,3 @@
-body {
-  font-family: "PT Sans", "Arial", sans-serif;
-  /* font-display: swap; */
-}
-
-
 @font-face {
   font-family: "PT Sans";
   src: url("fonts/ptsans-400.woff2") format("woff2");
@@ -18,17 +12,350 @@ body {
   font-style: bold;
 }
 
+.page {
+  font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #f2f2f2;
+  color: #000000;
+  /* font-display: swap; */
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #82b3d3;
+  border: none;
+}
+
+.page-wrap {
+  max-width: 1200px;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.header-link {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+.header-button {
+  background-color: #756157;
+  text-decoration: none;
+}
+
 .welcome {
-  background-image: url(/images/welcome-background.jpg);
-  background-size: cover;
+  background-image: url(/images/welcome-background-border.svg), url(/images/welcome-background.jpg);
+  background-repeat: no-repeat;
+  background-color: #787276;
+  text-align: center;
+  background-position: bottom, center;
+  background-size: auto, cover;
+  /* height: 485px; */
 }
 
 .welcome-banner {
-  /* margin: auto; */
+  text-align: center;
+}
+
+.welcome-content-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.welcome-content-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+
+}
+
+.reasons-list {
+  list-style: none;
+}
+
+.reasons-item {
+  background-color: #82b3d3;
+}
+
+.reasons-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  /* border: solid 2px rgba(255, 255, 255, 0.3); */
+}
+
+.reasons-item:nth-child(n+3):nth-child(-n+4) {
+  background-color: #83b3d333;
+}
+
+.reasons-item:nth-child(n+2):nth-child(-n+5):nth-child(even) {
+  background-color: #83b3d31f;
+}
+
+.reasons-item:nth-child(n+2):nth-child(-n+4) .reasons-item-title {
+  color: #000000;
+}
+
+.reasons-item-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.reasons-item:nth-child(n+2):nth-child(-n+4) .reasons-item-description {
+  color: #000000;
+}
+
+.advices-list {
+  list-style: none;
+}
+
+.advices-item {
+  background-color: #83b3d31f;
+}
+
+.advices-item:nth-child(n+2):nth-child(-n+2) {
+  background-color: #ffffff;
+}
+
+.advices-logo {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+}
+
+.advices-logo-housing {
+  background: url(/images/advices-home-icon.svg) no-repeat;
+}
+
+.advices-logo-meal {
+  background: url(/images/advices-meal-icon.svg) no-repeat;
+}
+
+.advices-logo-souvenirs {
+  background: url(/images/advices-souvenirs-icon.svg) no-repeat;
+}
+
+.advices-item-title {
+  color: #000000;
+}
+
+.advices-item-description {
+  color: #000000;
+}
+
+.search {
+  text-align: center;
+}
+
+.search-link {
+  color: #ffffff;
+  background-color: #756157;
+}
+
+.hotels {
+  background: url(/images/hotels-background.jpg) no-repeat;
+  background-color: #787276;
+  background-size: cover;
+  color: #ffffff;
+
+}
+
+.hotels-title {
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.hotels-breadcrumbs-list {
+  list-style: none;
+}
+
+.hotels-breadcrumbs-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hotels-breadcrumbs-arrow {
+  background: url(/images/breadcrumbs-arrow.svg) no-repeat;
+  height: 15px;
+}
+
+.hotels-form-caption {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.hotels-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotels-form-reset-button {
+  background-color: transparent;
+}
+
+.catalog {
+  background-color: #ffffff;
+}
+
+.catalog-content-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: start;
+}
+
+.catalog-number {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: start;
+  font-weight: 700;
+}
+
+.catalog-filter {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-view-button {
+  border: solid 2px #e5e5e5;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-view-button-selected {
+  color: inherit;
+  text-decoration: none;
+  border: solid 2px #000000;
+}
+
+.catalog-card-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.catalog-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-card-more-button {
+  background-color: #756157;
+}
+
+.catalog-card-favorite-button-selected {
+  background-color: #7db54f;
+}
+
+.catalog-card-rating {
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  background-color: #82b3d3;
+}
+
+.pagination-item-current {
+  background-color: #f2f2f2;
+}
+
+.pagination-link {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pagination-link-current {
+  color: #000000;
 }
 
 .subscribe {
   background-image: url(/images/subscribe-background.png);
-  width: 1200px;
-  height: max-content;
+  color: #ffffff;
+  text-align: center;
 }
+
+.subscribe-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+
+}
+
+.subscribe-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.subscribe-catalog {
+  background: transparent;
+  color: #000000
+}
+
+.footer-social {
+  list-style: none;
+  font-weight: 700;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer-contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.footer-copyright-link {
+  font-weight: 700;
+}
+
+.footer-copyright-logo {
+  /* background-image: url(/images/footer-copyright-logo.svg);
+  width: 115px;
+  height: 33px; */
+}
+
+/* .visually-hidden {
+  display: none;
+} */
