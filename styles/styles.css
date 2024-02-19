@@ -1,13 +1,13 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-weight: 700;
   font-style: bold;
 }
@@ -48,6 +48,10 @@
   font-weight: 700;
 }
 
+.header-list {
+  list-style: none;
+}
+
 .header-link {
   text-decoration: none;
   color: inherit;
@@ -62,7 +66,7 @@
 }
 
 .welcome {
-  background-image: url(/images/welcome-background-border.svg), url(/images/welcome-background.jpg);
+  background-image: url(../images/welcome-background-border.svg), url(../images/welcome-background.jpg);
   background-repeat: no-repeat;
   background-color: #787276;
   text-align: center;
@@ -148,15 +152,15 @@
 }
 
 .advices-logo-housing {
-  background: url(/images/advices-home-icon.svg) no-repeat;
+  background: url(../images/advices-home-icon.svg) no-repeat;
 }
 
 .advices-logo-meal {
-  background: url(/images/advices-meal-icon.svg) no-repeat;
+  background: url(../images/advices-meal-icon.svg) no-repeat;
 }
 
 .advices-logo-souvenirs {
-  background: url(/images/advices-souvenirs-icon.svg) no-repeat;
+  background: url(../images/advices-souvenirs-icon.svg) no-repeat;
 }
 
 .advices-item-title {
@@ -177,7 +181,7 @@
 }
 
 .hotels {
-  background: url(/images/hotels-background.jpg) no-repeat;
+  background: url(../images/hotels-background.jpg) no-repeat;
   background-color: #787276;
   background-size: cover;
   color: #ffffff;
@@ -200,7 +204,7 @@
 }
 
 .hotels-breadcrumbs-arrow {
-  background: url(/images/breadcrumbs-arrow.svg) no-repeat;
+  background: url(../images/breadcrumbs-arrow.svg) no-repeat;
   height: 15px;
 }
 
@@ -318,7 +322,7 @@
 }
 
 .subscribe {
-  background-image: url(/images/subscribe-background.png);
+  background-image: url(../images/subscribe-background.png);
   color: #ffffff;
   text-align: center;
 }
@@ -363,7 +367,7 @@
 }
 
 .footer-copyright-logo {
-  /* background-image: url(/images/footer-copyright-logo.svg);
+  /* background-image: url(../images/footer-copyright-logo.svg);
   width: 115px;
   height: 33px; */
 }
