@@ -37,6 +37,7 @@
           </a>
         </div>
           <a class="button header-button" href="#">Хочу сюда!</a>
+      </div>
     </header>
     <main class="main">
       <section class="hotels">
@@ -60,7 +61,6 @@
             <p class="hotels-form-pool"></p>
             <label class="" for="hotels-input-pool">Бассейн</label>
             <input type="checkbox" name="hotels-input-pool" id="hotels-input-pool">
-            </p>
             <p class="hotels-form-parking">
               <label class="hotels-label" for="hotels-input-parking">Парковка</label>
               <input type="checkbox" name="hotels-input-parking" id="hotels-input-parking">
@@ -87,10 +87,9 @@
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <p class="catalog-content-title welcome-content-title">Найдено гостиниц:</p>
         <span class="catalog-number">38</span>
-        <select class="catalog-filter">
-          <label class="visually-hidden" for="filter-lowcost">Сортировка по возрастанию цены</label>
+        <label class="visually-hidden" for="catalog-filter">Сортировка по цене</label>
+        <select class="catalog-filter" id="catalog-filter">
           <option value="lowcost" id="filter-lowcost">Сначала дешевые</option>
-          <label class="visually-hidden" for="filter-expensive">Сортировка по убыванию цены</label>
           <option value="expensive" id="filter-expensive">Сначала дорогие</option>
         </select>
         <a class="catalog-view-button-selected" href="#">
@@ -210,7 +209,6 @@
         <div class="footer-copyright-logo">
           <a class="footer-link footer-copyright-link visually-hidden" href="https://htmlacademy.ru/study">Логотип htmlacademy</a>
           </div>
-          </a>
       </footer>
       </div>
   </div>
