@@ -18,6 +18,10 @@ html {
   height: 100%;
 }
 
+option {
+  background-color: #e5e5e5;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -466,6 +470,8 @@ html {
   font-size: 18px;
   line-height: 21px;
   margin: 0 40px 0 0;
+  border: solid 2px #e5e5e5;
+  padding: 14px 131px 14px 20px;
 }
 
 .catalog-view-button:last-child {
