@@ -355,6 +355,8 @@ html {
 
 .hotels-form {
   display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
 }
 
 .hotels-form-set {
@@ -363,19 +365,29 @@ html {
   padding: 0;
 }
 
+.hotels-input {
+  margin: 0 0 8px;
+}
+
 .hotels-input-set {
   display: flex;
+  margin: 0;
 }
 
 .hotels-form-housing {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .hotels-form-caption {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin: 0 0 32px;
+}
+
+.hotels-form-cost {
+  padding: 0 0 0 70px;
 }
 
 .hotels-form-input {
@@ -388,6 +400,9 @@ html {
   line-height: 24px;
   font-weight: 700;
   width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
 }
 
 .hotels-form-input::placeholder {
@@ -403,10 +418,17 @@ html {
 .hotels-button-set{
   display: flex;
   flex-direction: column;
+  gap: 32px;
+  padding: 56px 0 0;
+}
+
+.hotels-form-button {
+  padding: 8px 50px;
 }
 
 .hotels-form-reset-button {
   background-color: transparent;
+  padding: 8px 50px;
 }
 
 .catalog {
