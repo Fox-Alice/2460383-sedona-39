@@ -214,6 +214,7 @@ html {
 
 .reasons-item:nth-child(4n+1) .reasons-item-title {
   color: #ffffff;
+  margin: 102px 112px 30px;
 }
 
 /* .reasons-item-title {
@@ -226,11 +227,13 @@ html {
   color: #333333;
   text-align: center;
   max-width: 230px;
-  margin: 30зч 85px 112px;
+  margin: 30px 85px 112px;
 }
 
 .reasons-item:nth-child(4n+1) .reasons-item-description {
   color: #ffffff;
+  margin: 30px 85px 102px;
+
 }
 
 .advices-content-title {
@@ -248,6 +251,7 @@ html {
 }
 
 .advices-item {
+  padding: 81px 85px;
   background-color: #83b3d31f;
 }
 
@@ -258,7 +262,7 @@ html {
 .advices-logo {
   width: 75px;
   height: 75px;
-  margin: 81px auto 0;
+  margin: 0 auto;
 }
 
 .advices-logo-housing {
@@ -274,10 +278,12 @@ html {
 }
 
 .advices-item-title {
+  margin: 30px auto;
   color: #000000;
 }
 
 .advices-item-description {
+  margin: 0 auto;
   color: #333333;
 }
 
@@ -515,16 +521,25 @@ html {
   line-height: 20px;
 }
 
+.pagination {
+  padding: 40px 70px 60px;
+}
+
 .pagination-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .pagination-item {
   text-align: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  max-height: 60px;
   background-color: #82b3d3;
+  border-radius: 4px;
 }
 
 .pagination-item-current {
@@ -541,6 +556,9 @@ html {
 }
 
 .pagination-link {
+  box-sizing: border-box;
+  display: block;
+  padding: 12px 0;
   color: #ffffff;
   font-size: 20px;
   line-height: 36px;
@@ -553,6 +571,7 @@ html {
 }
 
 .subscribe {
+  padding: 96px 0 104px;
   background-color: #787276;
   background-image: url(../images/subscribe-background.png);
   color: #ffffff;
@@ -560,7 +579,7 @@ html {
 }
 
 .subscribe-content-title {
-  padding: 69px 0 20px;
+  padding: 0 0 20px;
   margin: 0 auto;
 }
 
