@@ -668,6 +668,25 @@ option {
   list-style: none;
   font-weight: 700;
   display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-link {
+  width: 47px;
+  height: 40px;
+}
+
+.footer-social-vk {
+  background: url(../images/footer-social-vk.svg) no-repeat center center;
+}
+
+.footer-social-tg {
+  background: url(../images/footer-social-tg.svg) no-repeat center center;
+}
+
+.footer-social-youtube {
+  background: url(../images/footer-social-youtube.svg) no-repeat center center;
 }
 
 .footer-link {
