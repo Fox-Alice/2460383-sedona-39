@@ -704,9 +704,9 @@ option {
 }
 
 .footer-copyright-logo {
-  /* background-image: url(../images/footer-copyright-logo.svg);
+  background: url(../images/footer-copyright-logo.svg) no-repeat center center;
   width: 115px;
-  height: 33px; */
+  height: 33px;
 }
 
 .visually-hidden {
