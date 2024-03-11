@@ -576,24 +576,32 @@ option {
   height: 17px;
   margin: 0;
   padding: 10px 0;
+  background-image: url("../images/catalog-card-rating-icon.svg");
+  background-repeat: space no-repeat;
+  font-size: 19px;
+  background-size: 1em auto;
+  background-position: 0 50%;
 }
 
 .catalog-card-rating-icon-two-stars {
-  background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
+  /* background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
   background-repeat: no-repeat;
-  background-position: 0 50%, 24px 50%;
+  background-position: 0 50%, 24px 50%; */
+  width: calc(2em + 6px);
 }
 
 .catalog-card-rating-icon-three-stars {
-  background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
+  /* background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
   background-repeat: no-repeat;
-  background-position: 0 50%, 24px 50%, 48px 50%;
+  background-position: 0 50%, 24px 50%, 48px 50%; */
+  width: calc(3em + 12px);
 }
 
 .catalog-card-rating-icon-four-stars {
-  background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
+  /* background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
   background-repeat: no-repeat;
-  background-position: 0 50%, 24px 50%, 48px 50%, 72px 50%;
+  background-position: 0 50%, 24px 50%, 48px 50%, 72px 50%; */
+  width: calc(4em + 18px);
 }
 
 .pagination {
