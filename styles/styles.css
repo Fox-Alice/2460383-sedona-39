@@ -33,6 +33,18 @@ option {
   color: #000000;
 }
 
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+  width: 1200px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  ;
+}
+
 .main {
   flex-grow: 1;
 }
@@ -49,20 +61,10 @@ option {
   border-radius: 4px;
 }
 
-.page-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  flex-grow: 1;
-  max-width: 1200px;
-  background-color: #ffffff;
-  margin: 0 auto;
-  box-shadow: 0 0 15px 0 #00000033;
-}
-
 .header {
   padding: 0 70px;
   display: flex;
+  gap: 30px;
 }
 
 .navigation {
@@ -73,7 +75,9 @@ option {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
@@ -83,20 +87,30 @@ option {
   color: inherit;
   font-weight: 700;
   padding: 20px 16px;
+  display: block;
 }
 
 .header-logo-link {
-  padding: 0;
+  display: block;
+}
+
+.header-logo {
+  width: 140px;
+  height: 70px;
+  display: block;
 }
 
 .header-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 0;
+  margin: 0;
 }
 
 .header-link {
+  display: block;
   text-decoration: none;
   color: inherit;
   font-size: 20px;
@@ -157,30 +171,30 @@ option {
 .reasons-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 
 .reasons-item {
+  box-sizing: border-box;
+  padding: 112px 85px;
   max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  /* grid-template-columns: repeat(3, 400px); */
-
 }
 
 .reasons-item-image {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 400px 800px;
   grid-auto-flow: column;
   grid-template-areas: "title image"
-                 "description image";
+                 "description image"; */
+                 display: flex;
   grid-column: span 3;
 }
 
 .reasons-item-description {
-  margin: 30px 85px 102px;
-  grid-area: description;
+  margin: 30px 0 0 0;
 }
 
 .reasons-image {
@@ -199,9 +213,8 @@ option {
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  grid-area: title;
-  margin: 112px 112px 30px;
   max-width: 230px;
+  margin: 0 0 30px 0;
 }
 
 .reasons-item:nth-child(2n-1) {
@@ -212,13 +225,14 @@ option {
   background-color: #83b3d31f;
 }
 
-.reasons-item:nth-child(4n+1) {
+.reasons-item-image .reasons-item {
+  padding: 102px 85px;
   background-color: #82b3d3;
 }
 
-.reasons-item:nth-child(4n+1) .reasons-item-title {
+.reasons-item-image .reasons-item .reasons-item-title {
   color: #ffffff;
-  margin: 102px 112px 30px;
+  margin: 0 0 30px;
 }
 
 /* .reasons-item-title {
@@ -231,13 +245,10 @@ option {
   color: #333333;
   text-align: center;
   max-width: 230px;
-  margin: 30px 85px 112px;
 }
 
-.reasons-item:nth-child(4n+1) .reasons-item-description {
+.reasons-item-image .reasons-item .reasons-item-description {
   color: #ffffff;
-  margin: 30px 85px 102px;
-
 }
 
 .advices-content-title {
@@ -252,6 +263,8 @@ option {
 .advices-list {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .advices-item {
@@ -515,6 +528,7 @@ option {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
+  align-items: start;
 }
 
 .catalog-card-title {
@@ -539,7 +553,12 @@ option {
   background-color: #756157;
 }
 
+.catalog-card-favorite-button {
+  padding: 8px 20px;
+}
+
 .catalog-card-favorite-button-selected {
+  padding: 8px 18px;
   background-color: #7db54f;
 }
 
@@ -551,6 +570,30 @@ option {
   line-height: 20px;
   padding: 9px 22px;
   margin: 0;
+}
+
+.catalog-card-rating-icon {
+  height: 17px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.catalog-card-rating-icon-two-stars {
+  background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%, 24px 50%;
+}
+
+.catalog-card-rating-icon-three-stars {
+  background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%, 24px 50%, 48px 50%;
+}
+
+.catalog-card-rating-icon-four-stars {
+  background-image: url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg"), url("../images/catalog-card-rating-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%, 24px 50%, 48px 50%, 72px 50%;
 }
 
 .pagination {
