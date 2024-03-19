@@ -27,14 +27,15 @@
         </nav>
         <ul class="header-list">
           <li class="header-search-icon">
-            <a class="header-link" href="#">
+            <a class="header-link header-search-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="header-favorite-icon">
-            <a class="header-link" href="#">
-              <span class="visually-hidden">Избранное 12</span>
+            <a class="header-link header-favorite-link" href="#">
+              <span class="visually-hidden">Избранное</span>
             </a>
+            <span class="header-favorite-counter">12</span>
           </li>
           <li class="header-booking-button">
             <a class="button header-button" href="#">Хочу сюда!</a>
@@ -60,42 +61,48 @@
           <form class="hotels-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="hotels-form-set hotels-form-infrastructure">
               <legend class="hotels-form-caption">Инфрастуктура:</legend>
-              <p class="hotels-input">
-                <input class="hotels-form-input" type="checkbox" name="hotels-input-pool" id="hotels-input-pool">
-                <label class="hotels-label" for="hotels-input-pool">Бассейн</label>
-              </p>
-              <p class="hotels-input">
-                <input class="hotels-form-input" type="checkbox" name="hotels-input-parking" id="hotels-input-parking">
-                <label class="hotels-label" for="hotels-input-parking">Парковка</label>
-              </p>
-              <p class="hotels-input">
-                <input class="hotels-form-input" type="checkbox" name="hotels-input-wifi" id="hotels-input-wifi">
-                <label class="hotels-label" for="hotels-input-wifi">Wi-Fi</label>
-              </p>
+                <label class="hotels-label" for="hotels-input-pool">
+                <input class="hotels-input-checkbox" type="checkbox" name="hotels-input-pool" id="hotels-input-pool" checked>
+                Бассейн
+                </label>
+                <label class="hotels-label" for="hotels-input-parking">
+                <input class="hotels-input-checkbox" type="checkbox" name="hotels-input-parking" id="hotels-input-parking" checked>
+                Парковка</label>
+                <label class="hotels-label" for="hotels-input-wifi">
+                <input class="hotels-input-checkbox" type="checkbox" name="hotels-input-wifi" id="hotels-input-wifi">
+                Wi-Fi</label>
             </fieldset>
             <fieldset class="hotels-form-set hotels-form-housing">
               <legend class="hotels-form-caption">Тип жилья:</legend>
-              <p class="hotels-input">
-                <input type="radio" name="housing" value="hotel" id="hotels-input-hotel">
-                <label class="hotels-label" for="hotels-input-hotel">Гостиница</label>
-              </p>
-              <p class="hotels-input">
-                <input type="radio" name="housing" value="motel" id="hotels-input-motel">
-                <label class="hotels-label" for="hotels-input-motel">Мотель</label>
-              </p>
-              <p class="hotels-input">
-                <input type="radio" name="housing" value="apartment" id="hotels-input-apartment">
-                <label class="hotels-label" for="hotels-input-apartment">Апартаменты</label>
-              </p>
+                <label class="hotels-label" for="hotels-input-hotel">
+                <input class="hotels-input-radio" type="radio" name="housing" value="hotel" id="hotels-input-hotel" checked>
+                Гостиница</label>
+                <label class="hotels-label" for="hotels-input-motel">
+                <input class="hotels-input-radio" type="radio" name="housing" value="motel" id="hotels-input-motel">
+                Мотель</label>
+                <label class="hotels-label" for="hotels-input-apartment">
+                <input class="hotels-input-radio" type="radio" name="housing" value="apartment" id="hotels-input-apartment">
+                Апартаменты</label>
             </fieldset>
             <fieldset class="hotels-form-set hotels-form-cost">
               <legend class="hotels-form-caption">Стоимость, &#8381;:</legend>
               <p class="hotels-input-set">
                 <input class="hotels-form-input-cost" type="number" name="minimum-cost" value="0"
-                  id="hotels-input-minimum-cost" placeholder="от">
+                  id="hotels-input-minimum-cost">
+                  <label class="hotels-input-cost-description hotels-input-cost-from" for="hotels-input-minimum-cost">от</label>
                 <input class="hotels-form-input-cost" type="number" name="maximum-cost" value="9000"
-                  id="hotels-input-maximum-cost" placeholder="до">
+                  id="hotels-input-maximum-cost">
+                  <label class="hotels-input-cost-description hotels-input-cost-to" for="hotels-input-maximum-cost">до</label>
               </p>
+              <div class="hotels-range">
+                <div class="hotels-range-scale">
+                  <div class="hotels-range-bar" style="left: 0; width: 226px;">
+                    <button class="hotels-range-toggle hotels-range-toggle-min" type="button"></button>
+                    <button class="hotels-range-toggle hotels-range-toggle-max" type="button"></button>
+                  </div>
+                </div>
+              </div>
+
             </fieldset>
             <div class="hotels-button-set">
               <button class="button hotels-form-button" type="submit">Применить</button>
@@ -234,22 +241,26 @@
         </section>
       </main>
       <footer class="footer">
-        <ul class="footer-social">
-          <li class="footer-social-link footer-social-vk">
-            <a class="visually-hidden footer-social-link">ВКонтакте</a>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-vk">
+              <span class="visually-hidden">ВКонтакте</span></a>
           </li>
-          <li class="footer-social-link footer-social-tg">
-            <a class="visually-hidden footer-social-link">Телеграм</a>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-tg">
+              <span class="visually-hidden">Телеграм</span>
+              </a>
           </li>
-          <li class="footer-social-link footer-social-youtube">
-            <a class="visually-hidden footer-link footer-social-link">YouTube</a>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-youtube">
+              <span class="visually-hidden">YouTube</span>
+              </a>
           </li>
         </ul>
         <a class="footer-link footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <div class="footer-copyright-logo">
-          <a class="footer-link footer-copyright-link visually-hidden" href="https://htmlacademy.ru/study">Логотип
-            htmlacademy</a>
-        </div>
+        <a class="footer-link footer-copyright-link" href="https://htmlacademy.ru/study">
+          <span class="visually-hidden">Логотип
+            htmlacademy</span></a>
       </footer>
     </div>
   </body>

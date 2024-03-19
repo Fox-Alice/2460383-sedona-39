@@ -27,14 +27,15 @@
         </nav>
         <ul class="header-list">
           <li class="header-search-icon">
-            <a class="header-link" href="#">
+            <a class="header-link header-search-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="header-favorite-icon">
-            <a class="header-link" href="#">
-              <span class="visually-hidden">Избранное 12</span>
+            <a class="header-link header-favorite-link" href="#">
+              <span class="visually-hidden">Избранное</span>
             </a>
+            <span class="header-favorite-counter">12</span>
           </li>
           <li class="header-booking-button">
             <a class="button header-button" href="#">Хочу сюда!</a>
@@ -89,20 +90,17 @@
             обслуживание!</p>
           <ul class="advices-list">
             <li class="advices-item">
-              <div class="advices-logo advices-logo-housing"></div>
-              <h3 class="advices-item-title reasons-item-title">Жильё</h3>
+              <h3 class="advices-item-title reasons-item-title advices-item-title-housing">Жильё</h3>
               <p class="advices-item-description reasons-item-description">Рекомендуем пожить в настоящем мотеле, всё
                 как в кино!</p>
             </li>
             <li class="advices-item">
-              <div class="advices-logo advices-logo-meal"></div>
-              <h3 class="advices-item-title reasons-item-title">Еда</h3>
+              <h3 class="advices-item-title reasons-item-title advices-item-title-meal">Еда</h3>
               <p class="advices-item-description reasons-item-description">Всегда заказывайте топовый фирменный бургер,
                 вы не разочаруетесь!</p>
             </li>
             <li class="advices-item">
-              <div class="advices-logo advices-logo-souvenirs"></div>
-              <h3 class="advices-item-title reasons-item-title">Сувениры</h3>
+              <h3 class="advices-item-title reasons-item-title advices-item-title-souvenirs">Сувениры</h3>
               <p class="advices-item-description reasons-item-description">Не только китайского, но и настоящего
                 местного производства!</p>
             </li>
@@ -128,23 +126,78 @@
         </section>
       </main>
       <footer class="footer">
-        <ul class="footer-social">
-          <li class="footer-social-link footer-social-vk">
-            <a class="visually-hidden">ВКонтакте</a>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-vk">
+              <span class="visually-hidden">ВКонтакте</span></a>
           </li>
-          <li class="footer-social-link footer-social-tg">
-            <a class="visually-hidden footer-social-link">Телеграм</a>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-tg">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
           </li>
-          <li class="footer-social-link footer-social-youtube">
-            <a class="visually-hidden footer-link footer-social-link">YouTube</a>
+          <li class="footer-social-item">
+            <a class="footer-social-link footer-social-youtube">
+              <span class="visually-hidden">YouTube</span>
+            </a>
           </li>
         </ul>
         <a class="footer-link footer-contact-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <div class="footer-copyright-logo">
-          <a class="visually-hidden footer-link footer-copyright-link" href="https://htmlacademy.ru/study">Логотип
-            htmlacademy</a>
-        </div>
+        <a class="footer-link footer-copyright-link" href="https://htmlacademy.ru/study">
+          <span class="visually-hidden">Логотип
+            htmlacademy</span></a>
       </footer>
+    </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="modal-content">
+          <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal-input-set">
+              <legend class="visually-hidden">Параметры бронирования</legend>
+              <ul class="modal-list">
+                <li class="modal-item">
+                  <label class="modal-label modal-label-arrive" for="arrive-date">Дата Заезда:</label>
+                  <input class="modal-input" name="arrive-date-input" type="text" id="arrive-date"
+                    value="27 апреля 2020" required>
+                  <span class="modal-validation-error modal-validation-error-active">Мы не можем отправить вас в
+                    прошлое</span>
+                </li>
+                <li class="modal-item">
+                  <label class="modal-label modal-label-departure" for="departure-date">Дата Выезда:</label>
+                  <input class="modal-input" name="departure-date-input" type="text" id="departure-date"
+                    value="1 сентября 2023" required>
+                  <span class="modal-validation-error modal-information">На эти даты есть свободные номера. Пока
+                    есть.</span>
+                </li>
+                <li class="modal-item modal-item-age">
+                  <label class="modal-label modal-label-adult" for="adult">Взрослые:
+                    <div class="modal-button-container">
+                      <button class="modal-button modal-button-less"></button>
+                      <input class="modal-input modal-input-age" name="adult-number-input" type="text" id="adult"
+                        value="2" required>
+                      <button class="modal-button modal-button-more"></button>
+                    </div>
+                  </label>
+                  <label class="modal-label modal-label-children" for="children">Дети:
+                    <span class="modal-tooltip-icon">i</span>
+                    <div class="modal-button-container">
+                    <button class="modal-button modal-button-less"></button>
+                    <input class="modal-input modal-input-age" name="children-number-input" type="text" id="children"
+                      value="2" required>
+                    <button class="modal-button modal-button-more"></button>
+                    </div>
+                  </label>
+                </li>
+            </fieldset>
+            <button class="button modal-submit-button">Найти</button>
+          </form>
+        </div>
+        </button>
+      </div>
     </div>
   </body>
 
