@@ -1011,7 +1011,7 @@ option {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
-  border-radius: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .subscribe-button:not(:disabled):hover {
@@ -1146,10 +1146,10 @@ option {
 }
 
 .modal-container-close {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
-  /* display: none; */
+  display: none;
 }
 
 .modal {
@@ -1190,6 +1190,7 @@ option {
 .modal-item-age {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .modal-title {
@@ -1221,6 +1222,10 @@ option {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.modal-label-children {
+  margin-right: 32px;
 }
 
 .modal-input {
@@ -1324,6 +1329,7 @@ option {
 }
 
 .modal-tooltip-icon {
+  display: block;
   width: 26px;
   height: 26px;
   background-color: #83B3D3;
@@ -1331,7 +1337,21 @@ option {
   text-align: center;
   color: #ffffff;
   font-weight: 400;
-  margin-left: 13px;
+  margin: 0 0 0 13px;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.modal-tooltip-icon:hover {
+  background-color: #68A2CA;
+}
+
+.modal-tooltip-icon:hover + .modal-tooltip-text,
+.modal-tooltip-icon:focus-visible + .modal-tooltip-text {
+  display: block;
 }
 
 .modal-submit-button {
@@ -1360,6 +1380,41 @@ option {
 .modal-information {
   display: block;
   color: #333333;
+}
+
+.modal-tooltip {
+  position: absolute;
+  margin-left: 48px;
+  width: 26px;
+  height: 26px;
+}
+
+.modal-tooltip-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #333333;
+  margin: 16px 0 0 0;
+  width: 256px;
+  height: 143px;
+  border-radius: 10px;
+  padding: 15px 18px 18px 22px;
+  box-sizing: border-box;
+  position: absolute;
+  left: -107px;
+  display: none;
+  }
+
+.modal-tooltip-text::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/modal-tooltip-arrow.svg);
+  position: absolute;
+  bottom: 100%;
+  left: calc(50% - 4px);
 }
 
 .visually-hidden {
