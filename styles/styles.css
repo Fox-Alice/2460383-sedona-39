@@ -1055,8 +1055,8 @@ option {
 
 .footer-social-link {
   cursor: pointer;
-  width: 47px;
-  height: 40px;
+  /* width: 47px;
+  height: 40px; */
 }
 
 .footer-social-link::before {
@@ -1222,10 +1222,12 @@ option {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 248px;
 }
 
 .modal-label-children {
   margin-right: 32px;
+  max-width: 45px;
 }
 
 .modal-input {
